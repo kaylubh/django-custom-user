@@ -10,8 +10,9 @@
   <link rel="stylesheet" href="{% static 'src/output.css' %}">
   {% endcompress %}
 </head>
-<body>
+<body class="bg-neutral-50 dark:bg-slate-800">
   <main>
+    <h1 class="text-4xl font-extrabold dark:text-white text-center p-6">{% block heading %}{% endblock heading %}</h1>
     {% block main %}
     {% endblock main %}
   </main>
